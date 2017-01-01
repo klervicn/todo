@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Liste {
+  text-align: left;
+  display: block;
+  font-size: large;
+}
+
+.Cross {
+height : 25px;
+}
+
+.TodoList input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  font-family: Verdana;
+}
+
+.TodoList button {
+  background: #757171;
+  padding: 10px 20px 10px 20px;
+  font-family: Verdana;
+  color: #ffffff;
+}
+.TodoList .TodoForm {
+  padding-left: 0;
+  width: 300px;
+
+}
+
+
+.TodoList .TodoForm li {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: Verdana;
+  background-color: #757171;
+  color: #ffffff;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
