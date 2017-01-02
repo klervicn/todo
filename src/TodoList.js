@@ -8,7 +8,9 @@ var TodoElements = React.createClass({
     var itemsEntries = this.props.entries;
     var remove = this.props.remove;
 
+
     function createTasks(item) {
+
       return <li key={item.key} onClick={remove}>{item.text}</li>
     }
 
@@ -54,12 +56,9 @@ var TodoList=React.createClass({
     });
   },
 
-  removeItem : function(key){
-  /*  var except = this.state.items.filter((item) => {if (item.key !== key) return item;});
-
-     Maj item list state
-    this.setState({items : except});*/
-    this.state.items.splice(key, 1);
+  removeItem : function(){
+    var index = 1 /*this.state.items.indexOf([item.text, item.key])*/;
+    this.state.items.splice(index, 1);
 
     this.setState({
       items : this.state.items
