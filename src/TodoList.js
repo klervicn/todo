@@ -1,4 +1,5 @@
 var React = require('react')
+import './TodoList.css'
 
 /* List elements */
 var TodoElements = React.createClass({
@@ -43,9 +44,12 @@ var TodoList = React.createClass({
   /* Get item list, add input to local item list (with id), maj item list */
   addItem: function (e) {
     e.preventDefault()
-    var itemArray = this.state.items
+    var nextArray = []
+    for (var item of this.state.items) {
+      nextArray.push(item)
+    };
 
-    itemArray.push(
+    nextArray.push(
       {
         text: this.state.inputValue,
         key: Date.now()
@@ -53,7 +57,7 @@ var TodoList = React.createClass({
     )
 
     this.setState({
-      items: itemArray,
+      items: nextArray,
       inputValue: ''
     })
   },
